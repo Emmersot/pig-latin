@@ -37,8 +37,33 @@ Code: vowelCounter("cater");
 Expected Output: 2
 
 Test: "It recognizes multiple consonants in a single word."
-Code: vowelCounter("cater");
-Expected Output: 2
+Code: consonantCounter("cater");
+Expected Output: 3
+
+Test: "It recognizes vowels in a multiple-word sentence."
+Code: vowelCounter("cats catered the event");
+Expected Output: 7
+
+Test: "It recognizes consonant in a multiple-word sentence."
+Code: consonantCounter("cats catered the event");
+Expected Output: 12
+
+Test: "It recognizes vowels in a multiple word sentence regardless of capitalization."
+Code: vowelCounter("CATS CATERED THE EVENT");
+Expected Output: 7
+
+Test: "It recognizes consonants in a multiple word sentence regardless of capitalization."
+Code: consonantsCounter("CATS CATERED THE EVENT");
+Expected Output: 12
+
+Test: "It recognizes all vowels in a multiple-word sentence regardless of inconsistent capitalization."
+Code: vowelCounter("CaTS CATEReD ThE EveNT");
+Expected Output: 7
+
+Test: "It recognizes all vowels in a multiple-word sentence regardless of inconsistent capitalization."
+Code: vowelCounter("CaTS CATEReD ThE EveNT");
+Expected Output: 12
+
 
 
 
